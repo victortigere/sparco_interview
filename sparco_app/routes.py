@@ -54,7 +54,7 @@ def register():
                     request_data["last_name"],
                     request_data["phone"],
                     user_image,
-                    1)
+                    0)
         db.session.add(user)
         db.session.commit()
         return jsonify({
